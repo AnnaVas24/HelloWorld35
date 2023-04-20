@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="eE7-7L-wCj">
             <objects>
-                <viewController id="Dir-om-zvq" sceneMemberID="viewController">
+                <viewController id="Dir-om-zvq" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="niX-am-Y49">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,9 @@
                                 <state key="normal" title="Show Greeting">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="greetingButtonTapped" destination="Dir-om-zvq" eventType="touchUpInside" id="PyL-xH-kJq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mKa-PQ-kQG"/>
@@ -45,10 +48,14 @@
                             <constraint firstItem="2jo-MK-5lg" firstAttribute="top" secondItem="mKa-PQ-kQG" secondAttribute="top" constant="133" id="d2S-Vk-8pE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="FLt-oN-nYd" id="CRq-h0-2Ov"/>
+                        <outlet property="greetingLabel" destination="2jo-MK-5lg" id="owz-ei-awr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgP-o0-WN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="539.69465648854964" y="5.6338028169014089"/>
+            <point key="canvasLocation" x="239" y="-15"/>
         </scene>
     </scenes>
 </document>
